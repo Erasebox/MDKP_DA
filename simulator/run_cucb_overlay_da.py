@@ -472,7 +472,8 @@ def run_one_seed(graphml, models_json, tasks_json, out_dir, seed=0, frames=200, 
                     print(f"[seed {seed}] frame {f} step {step} tasks with empty prefs: {empty_cnt}/{len(tasks_step)}")
 
         # update CUCB with frame-level semi-bandit feedback
-        cu.update(chosen, frame_rewards)
+        normalized_rewards = {arm: 1.0 if frame_rewards.get(arm,0) > 0 else 0.0 for arm in chosen}
+        cu.update(chosen, normalized_rewards)
         per_frame_list.append(frame_accepted)
         per_selected_list.append(len(chosen))
         cumulative += frame_accepted
@@ -555,3 +556,4 @@ def parse_args():
 if __name__ == "__main__":
     args = parse_args()
     batch_run(args)
+
