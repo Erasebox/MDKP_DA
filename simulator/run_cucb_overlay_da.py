@@ -378,6 +378,18 @@ def run_one_seed(graphml, models_json, tasks_json, out_dir, seed=0, frames=200, 
                     server_profiles[str(n)]['location'] = (random.random()*10, random.random()*10)
     # build router-server delay map
     delay_map, routers, servers = build_router_server_delay(G)
+
+    if verbose:
+        print(f"[seed {seed}] Loaded graph with {len(routers)} routers and {len(servers)} servers")
+        # show a few delay_map entries that are finite
+        sample = []
+        for k, v in list(delay_map.items())[:50]:
+            if v != float('inf'):
+                sample.append((k, v))
+            if len(sample) >= 6:
+                break
+        print(f"[seed {seed}] sample delay_map entries (first finite): {sample}")
+
     # normalize model keys to int
     models_int = {int(k): v for k,v in models.items()}
     cu = CombinatorialUCB(server_profiles, models_int, alpha=alpha, k_select=k_select)
@@ -391,12 +403,29 @@ def run_one_seed(graphml, models_json, tasks_json, out_dir, seed=0, frames=200, 
     for f in range(frames):
         # upper-layer select once per frame
         chosen = cu.select()
+
+        if verbose and (f < 10 or (f % 50 == 0)):
+            print(f"[seed {seed}] frame {f}: chosen arms count={len(chosen)}")
+            print(" chosen arms (sample up to 20):", chosen[:20])
+            sample_arms = list(cu.counts.keys())[:10]
+            print(" counts(sample):", {str(a): cu.counts[a] for a in sample_arms})
+            print(" sums(sample):", {str(a): cu.sums[a] for a in sample_arms})
+
         # transform chosen into instances dict indexed 0..len-1 with server id as stored strings
         instances = {}
         for idx, arm in enumerate(chosen):
             s, m = arm
             s_str = str(s)
             instances[idx] = {'server': s_str, 'model': int(m), 'capacity': 1}
+
+        # print server caps and arm resource samples for debugging
+        if verbose and (f < 5 or (f % 50 == 0)):
+            caps = cu.server_caps_init()
+            print(f"[seed {seed}] server_caps (sample up to 8): {dict(list(caps.items())[:8])}")
+            # arm resource for chosen arms
+            sample_arm_res = {arm: cu.arm_resource(arm) for arm in chosen[:8]}
+            print(f"[seed {seed}] arm_res for chosen (sample up to 8): {sample_arm_res}")
+
         # get tasks that arrive at time f
         arrivals = tasks_by_time.get(f, [])
         # partition arrivals into steps_per_frame chunks (evenly; last chunk may be shorter)
@@ -414,21 +443,42 @@ def run_one_seed(graphml, models_json, tasks_json, out_dir, seed=0, frames=200, 
         for step in range(steps_per_frame):
             tasks_step = chunks[step]
             prefs = build_task_candidates(tasks_step, instances, G, delay_map, overlay, server_profiles, models_int, overlay_hop_penalty=overlay_hop_penalty)
+            # debug: print some prefs for first few tasks
+            if verbose and (f < 5):
+                for t in tasks_step[:5]:
+                    pid = t['task_id']
+                    pl = prefs.get(pid, [])
+                    print(f"[seed {seed}] frame {f} step {step} task {pid} prefs_len={len(pl)} prefs_sample={pl[:8]}")
+
             matching = deferred_acceptance(tasks_step, instances, prefs)
             # count accepted and per-arm reward
+            per_inst_step = defaultdict(int)
             for tid, inst in matching.items():
                 if inst is not None:
                     arm = chosen[inst] if inst < len(chosen) else None
                     if arm is not None:
                         frame_rewards[arm] += 1
                         frame_accepted += 1
+                        per_inst_step[arm] += 1
+
+            if verbose and (f < 5 or step == steps_per_frame - 1):
+                accepted_step = sum(1 for v in matching.values() if v is not None)
+                print(f"[seed {seed}] frame {f} step {step} accepted_in_step={accepted_step}")
+                if len(per_inst_step) > 0:
+                    print(f"[seed {seed}] frame {f} step {step} per_inst_accepts sample:", dict(list(per_inst_step.items())[:10]))
+                # if many tasks had empty prefs, sample that info
+                empty_cnt = sum(1 for t in tasks_step if len(prefs.get(t['task_id'], [])) == 0)
+                if empty_cnt > 0:
+                    print(f"[seed {seed}] frame {f} step {step} tasks with empty prefs: {empty_cnt}/{len(tasks_step)}")
+
         # update CUCB with frame-level semi-bandit feedback
         cu.update(chosen, frame_rewards)
         per_frame_list.append(frame_accepted)
         per_selected_list.append(len(chosen))
         cumulative += frame_accepted
         if verbose and f % 50 == 0:
-            print(f"[seed {seed}] frame {f}: accepted={frame_accepted} cumulative={cumulative}")
+            print(f"[seed {seed}] frame {f}: accepted={frame_accepted} cumulative={cumulative} frame_rewards_sample={dict(list(frame_rewards.items())[:10])}")
+
     # save per-frame csv
     df = pd.DataFrame({'frame': list(range(frames)), 'accepted': per_frame_list, 'selected': per_selected_list})
     csv_path = os.path.join(out_dir, f"per_frame_seed{seed}.csv")
