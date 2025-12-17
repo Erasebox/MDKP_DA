@@ -1,0 +1,74 @@
+[
+  {
+    "id": 0,
+    "name": "model_0",
+    "type": "detection",
+    "cpu_mean": 0.903,
+    "gpu_mean": 0.1,
+    "gpu_peak": 0.167,
+    "iops": 50,
+    "mem_mb": 500,
+    "acc_mean": 0.724,
+    "p99_latency_ms": 432.386
+  },
+  {
+    "id": 1,
+    "name": "model_1",
+    "type": "classification",
+    "cpu_mean": 2.394,
+    "gpu_mean": 0.0,
+    "gpu_peak": 0.367,
+    "iops": 50,
+    "mem_mb": 200,
+    "acc_mean": 0.905,
+    "p99_latency_ms": 142.122
+  },
+  {
+    "id": 2,
+    "name": "model_2",
+    "type": "segmentation",
+    "cpu_mean": 3.533,
+    "gpu_mean": 0.0,
+    "gpu_peak": 0.202,
+    "iops": 50,
+    "mem_mb": 1000,
+    "acc_mean": 0.629,
+    "p99_latency_ms": 424.748
+  },
+  {
+    "id": 3,
+    "name": "model_3",
+    "type": "pose",
+    "cpu_mean": 3.9,
+    "gpu_mean": 0.0,
+    "gpu_peak": 0.477,
+    "iops": 50,
+    "mem_mb": 1000,
+    "acc_mean": 0.854,
+    "p99_latency_ms": 59.6
+  },
+  {
+    "id": 4,
+    "name": "model_4",
+    "type": "tracking",
+    "cpu_mean": 1.543,
+    "gpu_mean": 0.0,
+    "gpu_peak": 0.003,
+    "iops": 100,
+    "mem_mb": 2000,
+    "acc_mean": 0.781,
+    "p99_latency_ms": 325.459
+  },
+  {
+    "id": 5,
+    "name": "model_5",
+    "type": "anomaly",
+    "cpu_mean": 3.68,
+    "gpu_mean": 1.0,
+    "gpu_peak": 1.263,
+    "iops": 50,
+    "mem_mb": 200,
+    "acc_mean": 0.669,
+    "p99_latency_ms": 477.459
+  }
+]

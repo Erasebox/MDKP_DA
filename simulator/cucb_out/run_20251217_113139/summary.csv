@@ -1,0 +1,9 @@
+seed,cumulative,csv
+0,2966,./cucb_out\run_20251217_113139\seed0\per_frame_seed0.csv
+1,2969,./cucb_out\run_20251217_113139\seed1\per_frame_seed1.csv
+2,2962,./cucb_out\run_20251217_113139\seed2\per_frame_seed2.csv
+3,2969,./cucb_out\run_20251217_113139\seed3\per_frame_seed3.csv
+4,2959,./cucb_out\run_20251217_113139\seed4\per_frame_seed4.csv
+5,2957,./cucb_out\run_20251217_113139\seed5\per_frame_seed5.csv
+6,2959,./cucb_out\run_20251217_113139\seed6\per_frame_seed6.csv
+7,2964,./cucb_out\run_20251217_113139\seed7\per_frame_seed7.csv

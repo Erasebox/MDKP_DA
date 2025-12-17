@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d10" for="edge" attr.name="bandwidth" attr.type="double"/>
+<key id="d9" for="edge" attr.name="latency" attr.type="double"/>
+<key id="d8" for="node" attr.name="loc_y" attr.type="double"/>
+<key id="d7" for="node" attr.name="loc_x" attr.type="double"/>
+<key id="d6" for="node" attr.name="storage_gb" attr.type="long"/>
+<key id="d5" for="node" attr.name="mem_gb" attr.type="long"/>
+<key id="d4" for="node" attr.name="gpu_count" attr.type="long"/>
+<key id="d3" for="node" attr.name="cpu_cores" attr.type="long"/>
+<key id="d2" for="node" attr.name="server_id" attr.type="long"/>
+<key id="d1" for="node" attr.name="router_id" attr.type="long"/>
+<key id="d0" for="node" attr.name="node_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="router_0">
+  <data key="d0">router</data>
+  <data key="d1">0</data>
+</node>
+<node id="router_1">
+  <data key="d0">router</data>
+  <data key="d1">1</data>
+</node>
+<node id="router_2">
+  <data key="d0">router</data>
+  <data key="d1">2</data>
+</node>
+<node id="router_3">
+  <data key="d0">router</data>
+  <data key="d1">3</data>
+</node>
+<node id="router_4">
+  <data key="d0">router</data>
+  <data key="d1">4</data>
+</node>
+<node id="router_5">
+  <data key="d0">router</data>
+  <data key="d1">5</data>
+</node>
+<node id="router_6">
+  <data key="d0">router</data>
+  <data key="d1">6</data>
+</node>
+<node id="router_7">
+  <data key="d0">router</data>
+  <data key="d1">7</data>
+</node>
+<node id="router_8">
+  <data key="d0">router</data>
+  <data key="d1">8</data>
+</node>
+<node id="router_9">
+  <data key="d0">router</data>
+  <data key="d1">9</data>
+</node>
+<node id="router_10">
+  <data key="d0">router</data>
+  <data key="d1">10</data>
+</node>
+<node id="router_11">
+  <data key="d0">router</data>
+  <data key="d1">11</data>
+</node>
+<node id="router_12">
+  <data key="d0">router</data>
+  <data key="d1">12</data>
+</node>
+<node id="router_13">
+  <data key="d0">router</data>
+  <data key="d1">13</data>
+</node>
+<node id="router_14">
+  <data key="d0">router</data>
+  <data key="d1">14</data>
+</node>
+<node id="router_15">
+  <data key="d0">router</data>
+  <data key="d1">15</data>
+</node>
+<node id="router_16">
+  <data key="d0">router</data>
+  <data key="d1">16</data>
+</node>
+<node id="router_17">
+  <data key="d0">router</data>
+  <data key="d1">17</data>
+</node>
+<node id="router_18">
+  <data key="d0">router</data>
+  <data key="d1">18</data>
+</node>
+<node id="router_19">
+  <data key="d0">router</data>
+  <data key="d1">19</data>
+</node>
+<node id="router_20">
+  <data key="d0">router</data>
+  <data key="d1">20</data>
+</node>
+<node id="router_21">
+  <data key="d0">router</data>
+  <data key="d1">21</data>
+</node>
+<node id="router_22">
+  <data key="d0">router</data>
+  <data key="d1">22</data>
+</node>
+<node id="router_23">
+  <data key="d0">router</data>
+  <data key="d1">23</data>
+</node>
+<node id="router_24">
+  <data key="d0">router</data>
+  <data key="d1">24</data>
+</node>
+<node id="router_25">
+  <data key="d0">router</data>
+  <data key="d1">25</data>
+</node>
+<node id="router_26">
+  <data key="d0">router</data>
+  <data key="d1">26</data>
+</node>
+<node id="router_27">
+  <data key="d0">router</data>
+  <data key="d1">27</data>
+</node>
+<node id="router_28">
+  <data key="d0">router</data>
+  <data key="d1">28</data>
+</node>
+<node id="router_29">
+  <data key="d0">router</data>
+  <data key="d1">29</data>
+</node>
+<node id="router_30">
+  <data key="d0">router</data>
+  <data key="d1">30</data>
+</node>
+<node id="router_31">
+  <data key="d0">router</data>
+  <data key="d1">31</data>
+</node>
+<node id="router_32">
+  <data key="d0">router</data>
+  <data key="d1">32</data>
+</node>
+<node id="router_33">
+  <data key="d0">router</data>
+  <data key="d1">33</data>
+</node>
+<node id="router_34">
+  <data key="d0">router</data>
+  <data key="d1">34</data>
+</node>
+<node id="router_35">
+  <data key="d0">router</data>
+  <data key="d1">35</data>
+</node>
+<node id="router_36">
+  <data key="d0">router</data>
+  <data key="d1">36</data>
+</node>
+<node id="router_37">
+  <data key="d0">router</data>
+  <data key="d1">37</data>
+</node>
+<node id="router_38">
+  <data key="d0">router</data>
+  <data key="d1">38</data>
+</node>
+<node id="router_39">
+  <data key="d0">router</data>
+  <data key="d1">39</data>
+</node>
+<node id="server_0">
+  <data key="d0">server</data>
+  <data key="d2">0</data>
+  <data key="d3">33</data>
+  <data key="d4">20</data>
+  <data key="d5">85</data>
+  <data key="d6">528</data>
+  <data key="d7">0.784314531168946</data>
+  <data key="d8">0.723304869209203</data>
+</node>
+<node id="server_1">
+  <data key="d0">server</data>
+  <data key="d2">1</data>
+  <data key="d3">143</data>
+  <data key="d4">0</data>
+  <data key="d5">101</data>
+  <data key="d6">451</data>
+  <data key="d7">1.4405074842498067</data>
+  <data key="d8">0.8870854086995407</data>
+</node>
+<node id="server_2">
+  <data key="d0">server</data>
+  <data key="d2">2</data>
+  <data key="d3">297</data>
+  <data key="d4">10</data>
+  <data key="d5">47</data>
+  <data key="d6">703</data>
+  <data key="d7">2.7619950280144754</data>
+  <data key="d8">0.7706918626902832</data>
+</node>
+<node id="server_3">
+  <data key="d0">server</data>
+  <data key="d2">3</data>
+  <data key="d3">199</data>
+  <data key="d4">0</data>
+  <data key="d5">80</data>
+  <data key="d6">768</data>
+  <data key="d7">3.25269512619677</data>
+  <data key="d8">0.021884369788308457</data>
+</node>
+<node id="server_4">
+  <data key="d0">server</data>
+  <data key="d2">4</data>
+  <data key="d3">231</data>
+  <data key="d4">0</data>
+  <data key="d5">156</data>
+  <data key="d6">1492</data>
+  <data key="d7">0.3380246573759496</data>
+  <data key="d8">1.0845837458567822</data>
+</node>
+<node id="server_5">
+  <data key="d0">server</data>
+  <data key="d2">5</data>
+  <data key="d3">65</data>
+  <data key="d4">0</data>
+  <data key="d5">28</data>
+  <data key="d6">512</data>
+  <data key="d7">1.5094334894446688</data>
+  <data key="d8">1.142781802878242</data>
+</node>
+<node id="server_6">
+  <data key="d0">server</data>
+  <data key="d2">6</data>
+  <data key="d3">55</data>
+  <data key="d4">0</data>
+  <data key="d5">26</data>
+  <data key="d6">605</data>
+  <data key="d7">2.1931302077375365</data>
+  <data key="d8">1.3395331749051782</data>
+</node>
+<node id="server_7">
+  <data key="d0">server</data>
+  <data key="d2">7</data>
+  <data key="d3">71</data>
+  <data key="d4">0</data>
+  <data key="d5">21</data>
+  <data key="d6">692</data>
+  <data key="d7">3.8611207966138106</data>
+  <data key="d8">1.6090929139818728</data>
+</node>
+<node id="server_8">
+  <data key="d0">server</data>
+  <data key="d2">8</data>
+  <data key="d3">64</data>
+  <data key="d4">0</data>
+  <data key="d5">24</data>
+  <data key="d6">1794</data>
+  <data key="d7">0.0751506450288019</data>
+  <data key="d8">2.699432224334693</data>
+</node>
+<node id="server_9">
+  <data key="d0">server</data>
+  <data key="d2">9</data>
+  <data key="d3">129</data>
+  <data key="d4">10</data>
+  <data key="d5">44</data>
+  <data key="d6">1231</data>
+  <data key="d7">1.3180170052234477</data>
+  <data key="d8">2.525290500665785</data>
+</node>
+<node id="server_10">
+  <data key="d0">server</data>
+  <data key="d2">10</data>
+  <data key="d3">154</data>
+  <data key="d4">0</data>
+  <data key="d5">26</data>
+  <data key="d6">2445</data>
+  <data key="d7">2.4054897217790843</data>
+  <data key="d8">2.1162434736363456</data>
+</node>
+<node id="server_11">
+  <data key="d0">server</data>
+  <data key="d2">11</data>
+  <data key="d3">87</data>
+  <data key="d4">0</data>
+  <data key="d5">48</data>
+  <data key="d6">909</data>
+  <data key="d7">3.6920259671838576</data>
+  <data key="d8">2.0596123800666795</data>
+</node>
+<node id="server_12">
+  <data key="d0">server</data>
+  <data key="d2">12</data>
+  <data key="d3">67</data>
+  <data key="d4">20</data>
+  <data key="d5">19</data>
+  <data key="d6">335</data>
+  <data key="d7">0.18841439100303928</data>
+  <data key="d8">3.3334248925122436</data>
+</node>
+<node id="server_13">
+  <data key="d0">server</data>
+  <data key="d2">13</data>
+  <data key="d3">69</data>
+  <data key="d4">0</data>
+  <data key="d5">75</data>
+  <data key="d6">1093</data>
+  <data key="d7">1.3204870533080617</data>
+  <data key="d8">3.8878637239136817</data>
+</node>
+<node id="server_14">
+  <data key="d0">server</data>
+  <data key="d2">14</data>
+  <data key="d3">52</data>
+  <data key="d4">20</data>
+  <data key="d5">26</data>
+  <data key="d6">1052</data>
+  <data key="d7">2.1815574160972124</data>
+  <data key="d8">3.6161143930918502</data>
+</node>
+<node id="server_15">
+  <data key="d0">server</data>
+  <data key="d2">15</data>
+  <data key="d3">153</data>
+  <data key="d4">0</data>
+  <data key="d5">53</data>
+  <data key="d6">2903</data>
+  <data key="d7">3.206122851832317</data>
+  <data key="d8">3.488564379552068</data>
+</node>
+<node id="server_16">
+  <data key="d0">server</data>
+  <data key="d2">16</data>
+  <data key="d3">60</data>
+  <data key="d4">0</data>
+  <data key="d5">84</data>
+  <data key="d6">2497</data>
+  <data key="d7">0.36076627508727593</data>
+  <data key="d8">4.41580522327972</data>
+</node>
+<node id="server_17">
+  <data key="d0">server</data>
+  <data key="d2">17</data>
+  <data key="d3">156</data>
+  <data key="d4">0</data>
+  <data key="d5">66</data>
+  <data key="d6">1218</data>
+  <data key="d7">1.311711394929365</data>
+  <data key="d8">4.312257881706605</data>
+</node>
+<node id="server_18">
+  <data key="d0">server</data>
+  <data key="d2">18</data>
+  <data key="d3">60</data>
+  <data key="d4">0</data>
+  <data key="d5">77</data>
+  <data key="d6">777</data>
+  <data key="d7">2.8515039159202695</data>
+  <data key="d8">4.335978384651778</data>
+</node>
+<node id="server_19">
+  <data key="d0">server</data>
+  <data key="d2">19</data>
+  <data key="d3">161</data>
+  <data key="d4">10</data>
+  <data key="d5">175</data>
+  <data key="d6">174</data>
+  <data key="d7">3.34172316735054</data>
+  <data key="d8">4.531265448263327</data>
+</node>
+<edge source="router_0" target="router_1">
+  <data key="d9">2.1854305348131313</data>
+  <data key="d10">955.6428757689246</data>
+</edge>
+<edge source="router_0" target="router_2">
+  <data key="d9">3.793972738151323</data>
+  <data key="d10">638.792635777333</data>
+</edge>
+<edge source="router_0" target="router_3">
+  <data key="d9">1.2020838819909643</data>
+  <data key="d10">240.3950683025824</data>
+</edge>
+<edge source="router_0" target="router_5">
+  <data key="d9">0.7613762547568976</data>
+  <data key="d10">879.5585311974417</data>
+</edge>
+<edge source="router_0" target="router_8">
+  <data key="d9">3.20501755284444</data>
+  <data key="d10">737.2653200164409</data>
+</edge>
+<edge source="router_0" target="router_11">
+  <data key="d9">0.592630224331111</data>
+  <data key="d10">972.9188669457949</data>
+</edge>
+<edge source="router_0" target="router_15">
+  <data key="d9">4.2459918836018975</data>
+  <data key="d10">291.10519961044855</data>
+</edge>
+<edge source="router_0" target="router_16">
+  <data key="d9">1.318212352431953</data>
+  <data key="d10">265.06405886809046</data>
+</edge>
+<edge source="router_0" target="router_18">
+  <data key="d9">1.8690900933179198</data>
+  <data key="d10">572.280788469014</data>
+</edge>
+<edge source="router_0" target="router_25">
+  <data key="d9">2.4437525838895207</data>
+  <data key="d10">362.1062261782377</data>
+</edge>
+<edge source="router_0" target="router_27">
+  <data key="d9">3.2533380262507077</data>
+  <data key="d10">225.54447458683765</data>
+</edge>
+<edge source="router_0" target="router_28">
+  <data key="d9">1.8146509184084816</data>
+  <data key="d10">429.7256589643225</data>
+</edge>
+<edge source="router_0" target="router_33">
+  <data key="d9">2.552314928976662</data>
+  <data key="d10">806.6583652537122</data>
+</edge>
+<edge source="router_0" target="router_34">
+  <data key="d9">1.3985320197126188</data>
+  <data key="d10">562.8109945722504</data>
+</edge>
+<edge source="router_0" target="router_35">
+  <data key="d9">3.165865559879191</data>
+  <data key="d10">141.80537144799794</data>
+</edge>
+<edge source="router_0" target="server_16">
+  <data key="d9">1.9051100113012676</data>
+  <data key="d10">476.03252560894435</data>
+</edge>
+<edge source="router_1" target="router_14">
+  <data key="d9">3.2339518335564725</data>
+  <data key="d10">253.47171131856237</data>
+</edge>
+<edge source="router_1" target="router_20">
+  <data key="d9">0.7927321684337578</data>
+  <data key="d10">953.9969835279999</data>
+</edge>
+<edge source="router_1" target="router_26">
+  <data key="d9">4.845344148835517</data>
+  <data key="d10">827.557613304815</data>
+</edge>
+<edge source="router_1" target="server_7">
+  <data key="d9">1.0685377093567565</data>
+  <data key="d10">1087.4461839892488</data>
+</edge>
+<edge source="router_2" target="router_6">
+  <data key="d9">1.870761961280168</data>
+  <data key="d10">187.90490260574546</data>
+</edge>
+<edge source="router_2" target="router_7">
+  <data key="d9">3.579048619304706</data>
+  <data key="d10">496.13724436564115</data>
+</edge>
+<edge source="router_2" target="router_9">
+  <data key="d9">1.0491720568015048</data>
+  <data key="d10">545.6592191001432</data>
+</edge>
+<edge source="router_2" target="router_22">
+  <data key="d9">0.6547483450184828</data>
+  <data key="d10">918.3883618709039</data>
+</edge>
+<edge source="router_3" target="router_4">
+  <data key="d9">1.6645099172000761</data>
+  <data key="d10">696.2700559185838</data>
+</edge>
+<edge source="router_5" target="server_6">
+  <data key="d9">0.27013363815842056</data>
+  <data key="d10">1312.856991808207</data>
+</edge>
+<edge source="router_5" target="server_17">
+  <data key="d9">0.6042886812919676</data>
+  <data key="d10">1014.3911290388481</data>
+</edge>
+<edge source="router_5" target="server_19">
+  <data key="d9">0.6825145534811773</data>
+  <data key="d10">1323.4680341284413</data>
+</edge>
+<edge source="router_6" target="server_12">
+  <data key="d9">1.0721413733438385</data>
+  <data key="d10">1312.8585887545328</data>
+</edge>
+<edge source="router_7" target="router_13">
+  <data key="d9">1.9026998424023494</data>
+  <data key="d10">568.0612190600298</data>
+</edge>
+<edge source="router_7" target="router_17">
+  <data key="d9">2.9601962570447586</data>
+  <data key="d10">266.36900997297437</data>
+</edge>
+<edge source="router_7" target="router_19">
+  <data key="d9">4.863130824940513</data>
+  <data key="d10">797.6195410250031</data>
+</edge>
+<edge source="router_7" target="server_0">
+  <data key="d9">0.5358261059948646</data>
+  <data key="d10">1806.60619728196</data>
+</edge>
+<edge source="router_8" target="server_14">
+  <data key="d9">0.35816260023678226</data>
+  <data key="d10">449.8845921956367</data>
+</edge>
+<edge source="router_9" target="router_10">
+  <data key="d9">4.727745237038851</data>
+  <data key="d10">905.3446153848839</data>
+</edge>
+<edge source="router_9" target="router_12">
+  <data key="d9">3.1905499046498833</data>
+  <data key="d10">929.6868115208051</data>
+</edge>
+<edge source="router_9" target="router_30">
+  <data key="d9">0.8982162592336378</data>
+  <data key="d10">276.38457617723066</data>
+</edge>
+<edge source="router_9" target="server_3">
+  <data key="d9">1.8928254518352456</data>
+  <data key="d10">1917.0714386046573</data>
+</edge>
+<edge source="router_9" target="server_10">
+  <data key="d9">1.9172918490657003</data>
+  <data key="d10">1291.114342011584</data>
+</edge>
+<edge source="router_9" target="server_18">
+  <data key="d9">0.6873404116583968</data>
+  <data key="d10">1359.1991778302283</data>
+</edge>
+<edge source="router_10" target="router_38">
+  <data key="d9">0.7035228000974213</data>
+  <data key="d10">392.7972976869379</data>
+</edge>
+<edge source="router_14" target="router_39">
+  <data key="d9">2.249047803602669</data>
+  <data key="d10">344.2141285965063</data>
+</edge>
+<edge source="router_15" target="server_1">
+  <data key="d9">0.6356994887207008</data>
+  <data key="d10">1409.8439853305813</data>
+</edge>
+<edge source="router_16" target="server_2">
+  <data key="d9">0.9281146288199422</data>
+  <data key="d10">1797.9861777697276</data>
+</edge>
+<edge source="router_18" target="router_21">
+  <data key="d9">4.229318791183682</data>
+  <data key="d10">421.07799402423035</data>
+</edge>
+<edge source="router_18" target="router_37">
+  <data key="d9">1.7642052935932133</data>
+  <data key="d10">588.4264748424237</data>
+</edge>
+<edge source="router_19" target="router_29">
+  <data key="d9">1.1341590123864318</data>
+  <data key="d10">821.9772826786357</data>
+</edge>
+<edge source="router_19" target="server_15">
+  <data key="d9">0.9767506576455967</data>
+  <data key="d10">799.0684146424717</data>
+</edge>
+<edge source="router_21" target="router_23">
+  <data key="d9">0.8354778965589686</data>
+  <data key="d10">988.1982429404655</data>
+</edge>
+<edge source="router_21" target="router_24">
+  <data key="d9">3.9751014618349583</data>
+  <data key="d10">278.8441133807552</data>
+</edge>
+<edge source="router_22" target="router_36">
+  <data key="d9">0.5248495270562108</data>
+  <data key="d10">833.9152856093507</data>
+</edge>
+<edge source="router_22" target="server_13">
+  <data key="d9">1.290394674842397</data>
+  <data key="d10">627.00822512479</data>
+</edge>
+<edge source="router_23" target="server_9">
+  <data key="d9">0.33992234653697273</data>
+  <data key="d10">1953.9106537990997</data>
+</edge>
+<edge source="router_23" target="server_14">
+  <data key="d9">0.20487961894579343</data>
+  <data key="d10">410.0529154550264</data>
+</edge>
+<edge source="router_25" target="server_11">
+  <data key="d9">0.28255027952833933</data>
+  <data key="d10">1317.4502319597643</data>
+</edge>
+<edge source="router_25" target="server_15">
+  <data key="d9">1.5149884462567427</data>
+  <data key="d10">1448.6916933260093</data>
+</edge>
+<edge source="router_26" target="router_31">
+  <data key="d9">3.680858047314277</data>
+  <data key="d10">756.1064512368886</data>
+</edge>
+<edge source="router_26" target="server_8">
+  <data key="d9">1.8314378931705249</data>
+  <data key="d10">400.15546815107245</data>
+</edge>
+<edge source="router_27" target="server_4">
+  <data key="d9">1.2409042537931132</data>
+  <data key="d10">264.69609283413575</data>
+</edge>
+<edge source="router_28" target="router_32">
+  <data key="d9">3.970716560086756</data>
+  <data key="d10">166.64018656068134</data>
+</edge>
+<edge source="router_31" target="server_8">
+  <data key="d9">1.2051276495244492</data>
+  <data key="d10">963.5996166445573</data>
+</edge>
+<edge source="router_32" target="server_17">
+  <data key="d9">1.527502246597547</data>
+  <data key="d10">1013.9922936016529</data>
+</edge>
+<edge source="router_33" target="server_5">
+  <data key="d9">0.41629636605015596</data>
+  <data key="d10">815.3834000895229</data>
+</edge>
+<edge source="router_36" target="server_3">
+  <data key="d9">1.361850132632902</data>
+  <data key="d10">518.799222932688</data>
+</edge>
+<edge source="router_38" target="server_9">
+  <data key="d9">1.975179340063285</data>
+  <data key="d10">1456.6910852355413</data>
+</edge>
+</graph></graphml>
